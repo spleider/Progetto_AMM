@@ -1,18 +1,31 @@
 body{
-    background-color: #AAEEAA80;
+    background-color: lightgreen;
     font: 17px/25px "Open Sans", Arial, sans-serif;
 }
 
+.postcontent{
+    padding-top: 20px;
+    
+}
+.user{
+    padding-top: 10px;
+}
 .user img{
     
     border-radius: 100%;
     padding-left: 10px;
+    float: left;
 }
 
+
+#logout{
+    float: right;
+}
 .user h3{
     padding-left: 10px;
     margin-bottom: 6px;
     color: #0e6b00;
+    display: inline-block;
 }
 .titolo h1{
     float: left;
@@ -47,7 +60,7 @@ body{
     list-style-type: none;
     padding: 0;
     width: 200px;
-    background-color: #91dcf5;
+    background-color: palegreen;
     float:left;
     margin-left: 4%;
     border: 1px solid black;
@@ -57,8 +70,7 @@ body{
     width: 233px;
     display: block;
     float: left;
-    margin-bottom: 95%;
-    padding-bottom: 95%;
+    padding-bottom: 35%;
     border: 1px solid #0e6b00;
     
 }
@@ -70,23 +82,10 @@ body{
     
 }
 
-.allposts{
-    display: block;
-    margin-left: 245px;
-    padding-top: 4px;
-    margin-right: 10%;
+#log{
+    margin-left: 35%
 }
 
-.post{
-    background-color: white;
-    margin-bottom: 30px;
-    padding-bottom: 12px;
-    padding-top: 1px;
-    margin-top: -4px;
-    width: 600px;
-    border: 1px dotted greenyellow;
-    
-}
 
 h1{
     background-color: lightgreen;
@@ -95,7 +94,7 @@ h1{
     padding-left: 10px;
     padding-top: 12px;
     padding-bottom: 5px;
-    box-shadow: 0 0 10px rgba(0,0,0,2);
+    box-shadow: 0 0 10px #5bb75b;
     border: 1px solid black;
 }
 .titolo h1{
@@ -132,7 +131,7 @@ h2{
     background-color: rgb(115, 226, 119);
     margin-top: 23px;
     height: 55px;
-    box-shadow: 0 0 10px rgba(0,0,0,2);
+    box-shadow: 0 0 10px #5bb75b;
 }
 .links li {
     float: left;
@@ -171,9 +170,6 @@ button:hover{
     text-align: left;
 }
 
-.login{
-    background-image: url("img/circuit.jpg"); 
-}
 
 .login h2{
     color: white;
@@ -185,7 +181,6 @@ button:hover{
 }
 
 .bacheca{
-    background-image: url("img/circuit.jpg");
     background-repeat: no-repeat;
     background-position: left top;
     margin-right: 200px;
@@ -216,7 +211,7 @@ button:hover{
     background-color: rgb(115, 226, 119);
     margin-top: 23px;
     height: 176px;
-    box-shadow: 0 0 10px rgba(0,0,0,2);
+    box-shadow: 0 0 10px #5bb75b;
     padding-top: 15px;
     
 }
@@ -266,22 +261,18 @@ button:hover{
     
 }
 
-.descrizione{
-    background-image: url("img/circuit.jpg"); 
-}
-
 .form{
     box-shadow: 0 0 10px rgba(0,0,0,.2);
     width: 350px;
-    margin-top: 10px;
     margin-bottom: 5px;
     padding: 10px;
     width: 350px;
     height: auto;
-    margin-left: auto;
+    margin-left: 10%;
     margin-right: auto;
     background-color: lightgreen;
     border: 1px solid springgreen;
+    float: left;
 }
 
 .form input, textarea {
@@ -300,6 +291,66 @@ button:hover{
     border: 1px solid #0e6b00;
 }
 
-.profilo {
-    background-image: url("img/circuit.jpg");
+
+.form input:focus{
+    border: 2px solid #1ccf11;
+    
+}
+
+@media only screen and (min-width: 1024px){
+   
+.allposts{
+    display: block;
+    margin-left: 245px;
+    padding-top: 4px;
+    margin-right: 10%;
+}
+
+.post{
+    background-color: white;
+    margin-bottom: 30px;
+    padding-bottom: 12px;
+    padding-top: 1px;
+    margin-top: -4px;
+    width: 600px;
+    border: 1px dotted greenyellow;
+    
+}
+.sidebar{
+    float: left;
+    width: 21%;
+    padding-left: 5px;
+} 
+
+}
+
+
+@media only screen and (max-width: 480px)
+{
+    .postcontent{
+    margin-bottom: 5px;
+    padding: 10px;
+    width: auto;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    float:left;
+}
+
+.sidebar ul{
+    width: 90%;
+    height:auto;
+    padding-left: 5px;
+} 
+
+   
+ .post{
+    height:auto;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width:200px;
+}
+
+
 }
