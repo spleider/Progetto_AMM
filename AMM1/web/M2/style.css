@@ -1,5 +1,5 @@
 body{
-    background-color: lightgreen;
+    background-color: palegreen;
     font: 17px/25px "Open Sans", Arial, sans-serif;
 }
 
@@ -34,6 +34,7 @@ body{
 }
 .links {
     float: left;
+    width: 80%;
     
 }
 
@@ -353,4 +354,9 @@ button:hover{
 }
 
 
+}
+
+#logout{
+    
+    background-color: #7aba7b;
 }

@@ -3,15 +3,23 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package amm;
 
+package amm.servlet;
 
+import amm.Gruppo;
+import amm.GruppoFactory;
+import amm.Post;
+import amm.PostFactory;
+import amm.Utente;
+import amm.UtenteFactory;
 import java.io.IOException;
-import java.util.List;
+import java.util.*;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
 /**
  *
  * @author Krevitz
@@ -47,7 +55,7 @@ public class Bacheca extends HttpServlet{
             List<Post> posts = PostFactory.getInstance().getPostList(utente);
             request.setAttribute("posts", posts);
             
-            request.getRequestDispatcher("bacheca.jsp").forward(request, response);
+            request.getRequestDispatcher("M2/bacheca.jsp").forward(request, response);
         } else {
             response.setStatus(HttpServletResponse.SC_NOT_FOUND);
         }
